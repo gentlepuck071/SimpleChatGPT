@@ -94,8 +94,9 @@ const ResultGPT: React.FC = () => {
                 <strong>User: </strong> {message.user}
               </div>
               <div className="text-green-700 gap-3 flex mt-4 items-center justify-end shadow p-2">
-                <Avatar user="bot" />
-                <strong>Bot:</strong> {message.bot}
+                <strong>Bot:</strong> 
+              {message.bot}
+              <Avatar user="bot" />
               </div>
             </div>
           ))}

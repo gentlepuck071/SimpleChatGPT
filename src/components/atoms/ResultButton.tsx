@@ -5,7 +5,7 @@ interface IButton {
 
 const ResultButton:React.FC<IButton> = ({name, onClick}) => {
     return(
-        <div className="ml-2 p-2 bg-blue-500 text-white rounded" onClick={onClick}>
+        <div className="ml-2 p-2 bg-gray-500 text-white rounded" onClick={onClick}>
             {name}
         </div>
     )
