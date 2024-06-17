@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
                 },
             }
         );
-        console.log('API response:', response.data.choices);
+        console.log('API response:', process.env);
         return NextResponse.json({ result: response.data.choices[0].message });
     } catch (error) {
         // console.error('Error generating response:', error);
