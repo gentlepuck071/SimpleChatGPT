@@ -75,7 +75,7 @@ const ResultGPT: React.FC = () => {
   return (
     <div className="flex flex-col items-center p-4 justify-center">
       <div className="w-full max-w-lg flex flex-col justify-center items-center">
-        <div className="flex w-[20rem]">
+        <div className="flex w-[80rem]">
           <input
             type="text"
             value={userMessage}
@@ -86,14 +86,14 @@ const ResultGPT: React.FC = () => {
 
           <ResultButton name="Result" onClick={handleSubmit} />
         </div>
-        <div className="bg-white shadow-xl rounded p-4 mb-4 h-[30rem] overflow-y-auto w-[60rem] mt-10">
+        <div className="bg-white shadow-xl rounded p-4 mb-4 h-[30rem] overflow-y-auto w-[80rem] mt-10">
           {messages.map((message, index) => (
             <div key={index} className="mb-2">
-              <div className="text-blue-700 flex mt-4  items-center">
+              <div className="text-blue-700 flex gap-3 mt-4  items-center shadow p-2">
                 <Avatar user="user" />
-                <strong>User:</strong> {message.user}
+                <strong>User: </strong> {message.user}
               </div>
-              <div className="text-green-700 flex mt-4 items-center justify-end">
+              <div className="text-green-700 gap-3 flex mt-4 items-center justify-end shadow p-2">
                 <Avatar user="bot" />
                 <strong>Bot:</strong> {message.bot}
               </div>
