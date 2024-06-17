@@ -86,7 +86,7 @@ const ResultGPT: React.FC = () => {
 
           <ResultButton name="Result" onClick={handleSubmit} />
         </div>
-        <div className="bg-white shadow-xl rounded p-4 mb-4 h-[30rem] overflow-y-auto w-[40rem] mt-10 mx-auto">
+        <div className="bg-white shadow-xl rounded p-4 mb-4 h-[30rem] overflow-y-auto w-[60rem] mt-10">
           {messages.map((message, index) => (
             <div key={index} className="mb-2">
               <div className="text-blue-700 flex mt-4  items-center">
